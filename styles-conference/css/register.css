@@ -1,0 +1,529 @@
+/* *************** Fluid ***************/
+/******** Font-size *********/
+:root {
+  --step--2: clamp(0.91rem, calc(0.89rem + 0.1vw), 0.96rem);
+  --step--1: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.2rem);
+  --step-0: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+  --step-1: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
+  --step-2: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
+  --step-3: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+  --step-4: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem);
+  --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
+}
+
+/* ********Space********/
+/* @link https://utopia.fyi/space/calculator?c=320,20,1.2,1200,40,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+:root {
+  --space-3xs: clamp(0.31rem, calc(0.2rem + 0.57vw), 0.63rem);
+  --space-2xs: clamp(0.63rem, calc(0.4rem + 1.14vw), 1.25rem);
+  --space-xs: clamp(0.94rem, calc(0.6rem + 1.7vw), 1.88rem);
+  --space-s: clamp(1.25rem, calc(0.8rem + 2.27vw), 2.5rem);
+  --space-m: clamp(1.88rem, calc(1.19rem + 3.41vw), 3.75rem);
+  --space-l: clamp(2.5rem, calc(1.59rem + 4.55vw), 5rem);
+  --space-xl: clamp(3.75rem, calc(2.39rem + 6.82vw), 7.5rem);
+  --space-2xl: clamp(5rem, calc(3.18rem + 9.09vw), 10rem);
+  --space-3xl: clamp(7.5rem, calc(4.77rem + 13.64vw), 15rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.31rem, calc(-0.03rem + 1.7vw), 1.25rem);
+  --space-2xs-xs: clamp(0.63rem, calc(0.17rem + 2.27vw), 1.88rem);
+  --space-xs-s: clamp(0.94rem, calc(0.37rem + 2.84vw), 2.5rem);
+  --space-s-m: clamp(1.25rem, calc(0.34rem + 4.55vw), 3.75rem);
+  --space-m-l: clamp(1.88rem, calc(0.74rem + 5.68vw), 5rem);
+  --space-l-xl: clamp(2.5rem, calc(0.68rem + 9.09vw), 7.5rem);
+  --space-xl-2xl: clamp(3.75rem, calc(1.48rem + 11.36vw), 10rem);
+  --space-2xl-3xl: clamp(5rem, calc(1.36rem + 18.18vw), 15rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1.25rem, calc(-0.11rem + 6.82vw), 5rem);
+}
+
+/* *************** Customs Properties ***************/
+:root {
+  --color-header: #20293bff;
+  --color-letter: #fff;
+  --color-sub-letter: #366143ff;
+  --color-p: #4d4d4dff;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(80, auto);
+  grid-template-areas:
+    "header               header                header"
+    "presentation      presentation       presentation"
+    "presentation      presentation       presentation"
+    "presentation      presentation       presentation"
+    "presentation      presentation       presentation"
+    "presentation      presentation       presentation"
+    "presentation      presentation       presentation"
+    "presentation      presentation       presentation"
+    "presentation      presentation       presentation"
+    "presentation      presentation       presentation"
+    "presentation      presentation       presentation"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "main                  main                  main"
+    "footer                footer                footer"
+    "footer                footer                footer"
+    "footer                footer                footer"
+    "footer                footer                footer"
+    "footer                footer                footer"
+    "footer                footer                footer"
+    "footer                footer                footer"
+    "footer                footer                footer"
+    "footer                footer               footer";
+}
+
+a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* *************** Headings, paragraph ***************/
+h1 {
+  font-size: var(--step-4);
+}
+
+h2 {
+  font-size: var(--step-3);
+}
+
+h3 {
+  font-size: var(--step-2);
+}
+
+h4 {
+  font-size: var(--step-0);
+  color: var(--color-sub-letter);
+}
+
+h2,
+h3 {
+  color: var(--color-sub-letter);
+}
+
+p {
+  font-size: var(--step--1);
+  color: var(--color-p);
+}
+
+/* *************** Header ***************/
+.header {
+  position: sticky;
+  height: 93.88px;
+  top: 0;
+  left: 0;
+  grid-area: header;
+  display: flex;
+  padding: 0 var(--space-m);
+  background-color: var(--color-header);
+}
+
+.logo {
+  width: 10rem;
+  padding-top: 1rem;
+  padding-right: 3rem;
+  border-top: thick solid var(--color-sub-letter);
+  margin-top: 0;
+  top: 0;
+  font-size: 1.5rem;
+}
+
+.logo a {
+  color: var(--color-letter);
+  font-weight: 100;
+}
+
+.logo a:hover {
+  color: var(--color-sub-letter);
+}
+
+.container {
+  position: absolute;
+  top: 93.88px;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  height: auto;
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  /* text-align: center; */
+}
+
+.container.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.container p {
+  color: var(--color-sub-letter);
+  padding-left: 2rem;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu a {
+  /* display: block; */
+  color: #fff;
+  margin: 1rem 0 1rem 2rem;
+  transition: all 0.5s;
+}
+
+.menu a:hover {
+  color: var(--color-sub-letter);
+  font-weight: 700;
+}
+
+/* *************** Botón de Hamburguesa ***************/
+.menu-btn {
+  display: block;
+  position: absolute;
+  top: 2.5rem;
+  right: 10%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+/* *************** Presentation ***************/
+.presentation {
+  grid-area: presentation;
+  padding-left: var(--space-m);
+  padding-right: var(--space-m);
+  padding-bottom: var(--space-s);
+  text-align: center;
+  background-image: linear-gradient(93deg, #b3deab 0%, #ffffda 100%);
+}
+
+.presentation > p {
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* *************** Main ***************/
+.main {
+  grid-area: main;
+  padding-left: var(--space-m);
+  padding-right: var(--space-m);
+  padding-bottom: var(--space-xl);
+}
+
+.content li {
+  list-style-type: disc;
+  color: var(--color-p);
+  margin-bottom: 0.5rem;
+}
+
+/* *************** Form ***************/
+.form {
+  margin-top: var(--space-xl);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: var(--color-sub-letter);
+}
+
+input {
+  height: 2rem;
+  font-size: 1rem;
+}
+
+input,
+select {
+  margin-bottom: var(--space-s);
+}
+
+input,
+select,
+textarea {
+  border: thin solid #c9c9c9ff;
+  border-radius: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+select {
+  height: 2rem;
+  width: 3.5rem;
+  padding-left: 0.8rem;
+}
+
+textarea {
+  height: 7rem;
+  padding-top: 0.5rem;
+  resize: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+
+.btn {
+  color: var(--color-letter);
+  width: 50%;
+  margin-top: 1.5rem;
+  padding: 1rem var(--space-s);
+  border: none;
+  border-radius: 0.4rem;
+  text-align: center;
+  background-color: var(--color-sub-letter);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.4;
+  transform: scaleX(0.9);
+}
+
+/* *************** Footer ***************/
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  background-color: var(--color-header);
+  padding: var(--space-s) var(--space-s) var(--space-m);
+}
+
+.footer small {
+  color: var(--color-sub-letter);
+  font-weight: 800;
+}
+
+.menu-foot {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-foot a {
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  color: var(--color-letter);
+  transition: color 0.5s;
+}
+
+.footer a:hover {
+  color: var(--color-sub-letter);
+}
+
+@media screen and (min-width: 48em) {
+  .container p,
+  .menu {
+    width: 50%;
+    margin: 1rem auto;
+  }
+
+  .footer {
+    align-items: center;
+    /* justify-content: space-evenly; */
+  }
+
+  .menu-foot {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-foot a {
+    margin: 0 0.5rem;
+  }
+
+  .presentation {
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+  }
+
+  .presentation > p {
+    margin-bottom: var(--space-m);
+    line-height: 1.5;
+  }
+
+  .main {
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .header {
+    position: static;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .header > .logo {
+    font-size: 5vw;
+    width: 38%;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .container {
+    position: static;
+    top: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    /* margin-top: var(--space-m); */
+    background-color: transparent;
+    backdrop-filter: none;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .container p {
+    margin-left: 18rem;
+    font-size: 1.3rem;
+    color: var(--color-sub-letter);
+  }
+
+  .container a {
+    font-weight: 700;
+    padding-left: 1.2rem;
+    color: #fff;
+  }
+
+  .container p,
+  .menu {
+    width: auto;
+    /* margin: 0; */
+  }
+
+  .menu {
+    flex-direction: row;
+    margin-right: 0;
+  }
+
+  .menu a {
+    margin: 0;
+  }
+
+  .presentation {
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+  }
+
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+  }
+
+  .form {
+    margin: 0;
+  }
+
+  .footer {
+    justify-content: space-around;
+    align-items: center;
+  }
+}

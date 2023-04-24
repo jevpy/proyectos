@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+button {
+  /* width: 80%; */
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: greenyellow;
+  margin: 8% 10% 18%;
+  padding: 2rem 10%;
+}
+
+.container > h1 {
+  text-align: center;
+}
+
+.error {
+  display: block;
+  padding: 1rem;
+  background-color: rgb(235, 103, 103);
+  color: #fff;
+}
+
+
+.option {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.option > p {
+  font-size: 1.25rem;
+}
+
+.list{
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 800;
+  background-color: #fff;
+}
+
+.none {
+  display: none;
+}
+
+ul li{
+  list-style: none;
+}
+

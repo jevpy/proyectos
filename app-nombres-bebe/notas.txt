@@ -1,0 +1,12 @@
+<article class="option">
+        <p>Girl</p>
+        <input type="checkbox" name="girl" id="girl">
+      </article>
+      <article class="option">
+        <p>Neutral</p>
+        <input type="checkbox" name="neutral" id="neutral">
+      </article>
+      <article class="option">
+        <p>Boy</p>
+        <input type="checkbox" name="boy" id="boy">
+      </article>
